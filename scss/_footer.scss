@@ -1,0 +1,38 @@
+footer {
+  padding: 85px 0 25px;
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    li {
+      font-size: 3rem;
+      &:nth-child(2) {
+        padding: 0 20px 0 20px;
+      }
+    }
+  }
+}
+
+.logo {
+  margin-bottom: 50px;
+  img {
+    width: 10%;
+  }
+}
+
+.useful-links {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  padding-left: 25px;
+  .trans {
+    padding: 50px;
+    @include tab {
+      padding: 10px;
+    }
+  }
+}
+
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+}

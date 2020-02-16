@@ -1,0 +1,788 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-slogan-left {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+
+.text-slogan-left img {
+  height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .text-slogan-left {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sec-title {
+  padding-top: 50px;
+  margin-bottom: 65px;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+}
+
+.sec-title:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: attr(data-title);
+  color: #364e96;
+  font-family: "Phosphate", serif;
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  color: #364e96;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.phosphate {
+  font-family: "Phosphate", serif;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  padding: 35px 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-logo {
+  display: inline-block;
+  left: 30px;
+  top: 10px;
+}
+
+.main-logo img {
+  width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-logo img {
+    width: 80px;
+  }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+}
+
+nav .nav-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  white-space: nowrap;
+  color: white;
+}
+
+nav .nav-bar li {
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+nav .nav-bar li:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+nav .nav-bar li::after {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+nav .nav-bar li:hover::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 767px) {
+  nav .nav-bar {
+    display: none;
+  }
+}
+
+.ham {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .ham {
+    width: 30px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #364e96;
+  }
+}
+
+.bar1 {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bar1.active {
+  -webkit-transform: translateY(8.5px) rotate(0.7rad);
+          transform: translateY(8.5px) rotate(0.7rad);
+}
+
+.bar2 {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bar2.active {
+  opacity: 0;
+}
+
+.bar3 {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bar3.active {
+  -webkit-transform: translateY(-8.5px) rotate(-0.7rad);
+          transform: translateY(-8.5px) rotate(-0.7rad);
+}
+
+.ham-menu {
+  display: none;
+  background-color: rgba(240, 240, 240, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.ham-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  z-index: 1;
+}
+
+.ham-menu li {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.keyvisual-slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+}
+
+.keyvisual-slider img {
+  width: 100%;
+  opacity: 0.9;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-top-keyvisual {
+  position: relative;
+}
+
+.section-top-keyvisual .title-slogan {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-top-keyvisual .title-slogan img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-top-keyvisual .social-links {
+  right: 20px;
+  width: 1.8rem;
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section-top-keyvisual .social-links .trans {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section-top-keyvisual .social-links {
+    display: none;
+  }
+}
+
+.section-top-about {
+  padding: 50px 0;
+}
+
+.section-top-about .about-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section-top-about .about-text {
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  padding: 0 50px;
+}
+
+.title-slogan {
+  margin: 0 auto 30px;
+}
+
+.title-slogan img {
+  width: 50%;
+}
+
+.section-top-feature {
+  padding: 50px;
+}
+
+.item {
+  margin-bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 959px) {
+  .item {
+    display: block;
+  }
+}
+
+.item .col-left {
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 959px) {
+  .item .col-left {
+    margin: auto;
+  }
+}
+
+.item .col-left img {
+  width: 500px;
+}
+
+@media screen and (max-width: 959px) {
+  .item .col-left img {
+    width: 100%;
+  }
+}
+
+.item.is-reversed {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.item.is-reversed .col-left {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0 0 0 3rem;
+}
+
+@media screen and (max-width: 959px) {
+  .item.is-reversed .col-left {
+    margin: 0 auto;
+  }
+}
+
+.text {
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.sec-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-top-menu {
+  padding: 50px;
+}
+
+.coffee-name {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+.text-price {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.text-description {
+  line-height: 1.5rem;
+}
+
+.section-top-coffee {
+  padding: 50px;
+}
+
+.beans-img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .beans-img {
+    width: 100%;
+  }
+}
+
+.beans-text {
+  line-height: 2rem;
+}
+
+.section-top-access {
+  padding: 50px;
+}
+
+.section-top-access .wrapper {
+  max-width: 66.667vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .section-top-access .wrapper {
+    max-width: none;
+  }
+}
+
+.shop-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.access-text {
+  margin-bottom: 50px;
+  line-height: 2rem;
+}
+
+.access-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 959px) {
+  .access-map {
+    display: block;
+    text-align: center;
+  }
+}
+
+.access-map .col-right {
+  width: 55%;
+}
+
+@media screen and (max-width: 959px) {
+  .access-map .col-right {
+    width: 100%;
+  }
+}
+
+.access-map iframe {
+  height: 300px;
+  width: 100%;
+}
+
+.access-map .col-left {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 959px) {
+  .access-map .col-left {
+    width: 100%;
+    margin: 50px auto 0px;
+  }
+}
+
+.cafe-name {
+  margin: 30px 0;
+  font-size: 2rem;
+}
+
+.cafe-address {
+  margin-bottom: 20px;
+}
+
+.cafe-info {
+  margin-top: 20px;
+  line-height: 2rem;
+}
+
+.cafe-info td {
+  padding-left: 20px;
+}
+
+.cafe-info table {
+  margin: 0 auto;
+}
+
+footer {
+  padding: 85px 0 25px;
+}
+
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+footer .social-links li {
+  font-size: 3rem;
+}
+
+footer .social-links li:nth-child(2) {
+  padding: 0 20px 0 20px;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.logo img {
+  width: 10%;
+}
+
+.useful-links {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 25px;
+}
+
+.useful-links .trans {
+  padding: 50px;
+}
+
+@media screen and (max-width: 959px) {
+  .useful-links .trans {
+    padding: 10px;
+  }
+}
+
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

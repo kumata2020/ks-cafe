@@ -1,0 +1,15 @@
+.section-top-coffee {
+  padding: 50px;
+}
+
+.beans-img {
+  width: 50%;
+  margin-bottom: 2rem;
+  @include sp {
+    width: 100%;
+  }
+}
+
+.beans-text {
+  line-height: 2rem;
+}

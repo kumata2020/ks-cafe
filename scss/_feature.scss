@@ -1,0 +1,38 @@
+.section-top-feature {
+  padding: 50px;
+}
+
+.item {
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  @include tab {
+    display: block;
+  }
+  .col-left {
+    margin-right: 3rem;
+    @include tab {
+      margin: auto;
+    }
+    img {
+      width: 500px;
+      @include tab {
+        width: 100%;
+      }
+    }
+  }
+  &.is-reversed {
+    justify-content: flex-end;
+    .col-left {
+      order: 2;
+      margin: 0 0 0 3rem;
+      @include tab {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.text {
+  line-height: 1.7;
+  text-align: justify;
+}

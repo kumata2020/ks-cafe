@@ -1,0 +1,63 @@
+.section-top-access {
+  padding: 50px;
+  .wrapper {
+    max-width: 66.667vw;
+    width: 100%;
+    margin: 0 auto;
+    @include tab {
+      max-width: none;
+    }
+  }
+}
+
+.shop-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.access-text {
+  margin-bottom: 50px;
+  line-height: 2rem;
+}
+
+.access-map {
+  display: flex;
+  @include tab {
+    display: block;
+    text-align: center;
+  }
+  .col-right {
+    width: 55%;
+    @include tab {
+      width: 100%;
+    }
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .col-left {
+    margin-left: 50px;
+    @include tab {
+      width: 100%;
+      margin: 50px auto 0px;
+    }
+  }
+}
+.cafe-name {
+  margin: 30px 0;
+  font-size: 2rem;
+}
+.cafe-address {
+  margin-bottom: 20px;
+}
+.cafe-info {
+  margin-top: 20px;
+  line-height: 2rem;
+  td {
+    padding-left: 20px;
+  }
+  table {
+    margin: 0 auto;
+  }
+}

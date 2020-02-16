@@ -1,0 +1,80 @@
+// color
+$base-color01: #364e96;
+$base-color02: #a6d3c8;
+
+// responsive
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
+    メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-slogan-left {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  img {
+    height: 200px;
+  }
+  @include sp {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sec-title {
+  padding-top: 50px;
+  margin-bottom: 65px;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    content: attr(data-title);
+    color: $base-color01;
+    font-family: "Phosphate", serif;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.title {
+  color: $base-color01;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.phosphate {
+  font-family: "Phosphate", serif;
+}
